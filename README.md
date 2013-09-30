@@ -29,6 +29,13 @@ Example
 
 **ExampleViewController.m**
 ```objc
+#import "ExampleViewController.h"
+
+@interface ExampleViewController ()
+
+@end
+
+@implementation ExampleViewController
 
 - (void)viewDidLoad
 {
@@ -50,5 +57,7 @@ Example
         [self.testObject setScore:2];
     });
 }
+
+@end
 
 ```
