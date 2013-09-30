@@ -4,8 +4,7 @@ CGFDatabindLabel
 Makes auto-updating the text of a UILabel a breeze.
 
 
-Example
-================
+### Simple Example
 
 **ExampleViewController.h**
 
@@ -59,5 +58,17 @@ Example
 }
 
 @end
+
+```
+
+### Formatter Block Example
+If you want to format the text before the `UILabel` gets updated, you can use the `formattingBlock` property to provide a block that returns a formatted string that fits your needs.
+
+```objc
+
+self.player1ScoreLabel.formattingBlock = ^(id value)
+{
+	return [NSString stringWithFormat:@"%@ points", value];
+};
 
 ```

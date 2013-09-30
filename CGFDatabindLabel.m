@@ -48,12 +48,9 @@
         {
             text = self.formattingBlock([[change objectForKey:@"new"] stringValue]);
         }
-
+        
         [self setText:text];
     }
 }
-
-
-
 
 @end
