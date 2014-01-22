@@ -1,4 +1,4 @@
 language: objective-c
 
 script: 
-- xctool -project "Sample Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj" -scheme CGFDataBindLabel-Sample -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES clean build run-tests -freshSimulator -freshInstall
+- xctool -project "Sample Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj" -scheme CGFDataBindLabel-Sample -sdk iphonesimulator6.1 ONLY_ACTIVE_ARCH=YES clean build run-tests -freshSimulator -freshInstall
