@@ -1,6 +1,3 @@
 language: objective-c
 xcode_project: Sample Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj
 xcode_scheme: CGFDataBindLabel-Sample
-before_install:
-    - brew update
-    - brew install xctool
