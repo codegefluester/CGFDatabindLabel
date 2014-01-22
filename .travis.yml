@@ -1,3 +1,3 @@
 language: objective-c
-xcode_project: CGFDataBindLabel-Sample.xcodeproj
-xcode_scheme: Sample\ Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample
+xcode_project: Sample\ Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj
+xcode_scheme: CGFDataBindLabel-Sample
