@@ -388,6 +388,7 @@
 				GCC_PREFIX_HEADER = "CGFDataBindLabel-Sample/CGFDataBindLabel-Sample-Prefix.pch";
 				INFOPLIST_FILE = "CGFDataBindLabel-Sample/CGFDataBindLabel-Sample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,6 +403,7 @@
 				GCC_PREFIX_HEADER = "CGFDataBindLabel-Sample/CGFDataBindLabel-Sample-Prefix.pch";
 				INFOPLIST_FILE = "CGFDataBindLabel-Sample/CGFDataBindLabel-Sample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -411,6 +413,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CGFDataBindLabel-Sample.app/CGFDataBindLabel-Sample";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -434,6 +437,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CGFDataBindLabel-Sample.app/CGFDataBindLabel-Sample";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
