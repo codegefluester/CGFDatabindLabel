@@ -3,6 +3,8 @@ CGFDatabindLabel
 
 Makes auto-updating the text of a UILabel a breeze.
 
+![CGFDataBindLabel Build Status](https://travis-ci.org/codegefluester/CGFDatabindLabel.png)
+
 
 ### Simple Example
 
