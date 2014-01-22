@@ -426,6 +426,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CGFDataBindLabel-SampleTests/CGFDataBindLabel-SampleTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -446,6 +447,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CGFDataBindLabel-Sample/CGFDataBindLabel-Sample-Prefix.pch";
 				INFOPLIST_FILE = "CGFDataBindLabel-SampleTests/CGFDataBindLabel-SampleTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
