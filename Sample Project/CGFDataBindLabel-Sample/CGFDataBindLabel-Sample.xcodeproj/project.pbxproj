@@ -18,7 +18,11 @@
 		11E5960E18903CEE00709022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E595F318903CEE00709022 /* Foundation.framework */; };
 		11E5960F18903CEE00709022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E595F718903CEE00709022 /* UIKit.framework */; };
 		11E5961718903CEE00709022 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E5961518903CEE00709022 /* InfoPlist.strings */; };
-		11E5961918903CEE00709022 /* CGFDataBindLabel_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5961818903CEE00709022 /* CGFDataBindLabel_SampleTests.m */; };
+		11E5961918903CEE00709022 /* CGFDataBindLabel_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5961818903CEE00709022 /* CGFDataBindLabel_Tests.m */; };
+		11E5962518903D1800709022 /* CGFDatabindLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5962418903D1800709022 /* CGFDatabindLabel.m */; };
+		11E5962618903D1800709022 /* CGFDatabindLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5962418903D1800709022 /* CGFDatabindLabel.m */; };
+		11E5962918903D6E00709022 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5962818903D6E00709022 /* TestObject.m */; };
+		11E5962A18903D6E00709022 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E5962818903D6E00709022 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +51,11 @@
 		11E5960C18903CEE00709022 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		11E5961418903CEE00709022 /* CGFDataBindLabel-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGFDataBindLabel-SampleTests-Info.plist"; sourceTree = "<group>"; };
 		11E5961618903CEE00709022 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		11E5961818903CEE00709022 /* CGFDataBindLabel_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGFDataBindLabel_SampleTests.m; sourceTree = "<group>"; };
+		11E5961818903CEE00709022 /* CGFDataBindLabel_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGFDataBindLabel_Tests.m; sourceTree = "<group>"; };
+		11E5962318903D1800709022 /* CGFDatabindLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGFDatabindLabel.h; path = ../../../CGFDatabindLabel.h; sourceTree = "<group>"; };
+		11E5962418903D1800709022 /* CGFDatabindLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGFDatabindLabel.m; path = ../../../CGFDatabindLabel.m; sourceTree = "<group>"; };
+		11E5962718903D6E00709022 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestObject.h; path = ../../../TestObject.h; sourceTree = "<group>"; };
+		11E5962818903D6E00709022 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestObject.m; path = ../../../TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		11E595F918903CEE00709022 /* CGFDataBindLabel-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				11E5962218903D0700709022 /* CGFDataBindLabel */,
 				11E5960218903CEE00709022 /* AppDelegate.h */,
 				11E5960318903CEE00709022 /* AppDelegate.m */,
 				11E5960518903CEE00709022 /* Images.xcassets */,
@@ -129,7 +138,7 @@
 		11E5961218903CEE00709022 /* CGFDataBindLabel-SampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				11E5961818903CEE00709022 /* CGFDataBindLabel_SampleTests.m */,
+				11E5961818903CEE00709022 /* CGFDataBindLabel_Tests.m */,
 				11E5961318903CEE00709022 /* Supporting Files */,
 			);
 			path = "CGFDataBindLabel-SampleTests";
@@ -142,6 +151,17 @@
 				11E5961518903CEE00709022 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11E5962218903D0700709022 /* CGFDataBindLabel */ = {
+			isa = PBXGroup;
+			children = (
+				11E5962718903D6E00709022 /* TestObject.h */,
+				11E5962818903D6E00709022 /* TestObject.m */,
+				11E5962318903D1800709022 /* CGFDatabindLabel.h */,
+				11E5962418903D1800709022 /* CGFDatabindLabel.m */,
+			);
+			name = CGFDataBindLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +261,8 @@
 			files = (
 				11E5960418903CEE00709022 /* AppDelegate.m in Sources */,
 				11E5960018903CEE00709022 /* main.m in Sources */,
+				11E5962918903D6E00709022 /* TestObject.m in Sources */,
+				11E5962518903D1800709022 /* CGFDatabindLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E5961918903CEE00709022 /* CGFDataBindLabel_SampleTests.m in Sources */,
+				11E5962618903D1800709022 /* CGFDatabindLabel.m in Sources */,
+				11E5962A18903D6E00709022 /* TestObject.m in Sources */,
+				11E5961918903CEE00709022 /* CGFDataBindLabel_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
