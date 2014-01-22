@@ -11,6 +11,7 @@
 @interface CGFDatabindLabel ()
 
 @property (readwrite) NSString *keypath;
+@property (strong) id theObject;
 
 @end
 
@@ -21,10 +22,12 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        if([object respondsToSelector:NSSelectorFromString(aKeypath)])
+        _theObject = object;
+        
+        if([_theObject respondsToSelector:NSSelectorFromString(aKeypath)])
         {
             self.keypath = aKeypath;
-            [object addObserver:self forKeyPath:self.keypath options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:nil];
+            [_theObject addObserver:self forKeyPath:self.keypath options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:nil];
         }
         else
         {
@@ -51,6 +54,11 @@
         
         [self setText:text];
     }
+}
+
+- (void) dealloc
+{
+    [_theObject removeObserver:self forKeyPath:self.keypath];
 }
 
 @end
