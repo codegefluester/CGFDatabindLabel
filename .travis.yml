@@ -1,4 +1,4 @@
 language: objective-c
-xcode_project: Sample Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj
-xcode_scheme: CGFDataBindLabel-Sample
-xcode_sdk: iphonesimulator
+
+script: 
+- xctool -project Sample Project/CGFDataBindLabel-Sample/CGFDataBindLabel-Sample.xcodeproj -scheme CGFDataBindLabel-Sample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build run-tests -freshSimulator -freshInstall
